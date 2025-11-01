@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎥 Cricket Videos</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .video-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    iframe {
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00ffcc;
+      width: 90%;
+      max-width: 600px;
+      height: 340px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="images/cricket-bg.mp4" type="video/mp4" />
+  </video>
+  <div class="overlay"></div>
+
+  <!-- Header and Navigation -->
+  <header>
+    <h1>🎥 Cricket Videos</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="legends.html">Legends</a></li>
+        <li><a href="my-journey.html">My Journey</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="box">
+      <h2>🔥 Watch Cricket in Action!</h2>
+      <p>Cricket is best enjoyed live or in highlights! Here are some exciting videos that show the thrill of the game—big sixes, stunning catches, and match-winning moments. Jab ball hawa mein jaata hai, toh dil bhi ud jaata hai!</p>
+
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/1Yzq7xW9ZzY" title="Cricket Highlights" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/3xX9ZzZy9zE" title="Best Catches in Cricket" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="box highlight">
+      <h2>🎬 Why I Love Watching Cricket</h2>
+      <p>Watching cricket teaches me strategy, timing, and sportsmanship. I learn from the pros and get inspired to improve my own game. Har video ek naya idea deta hai—kaise shot maarna hai, kaise fielding karni hai!</p>
+      <button onclick="location.href='contact.html'">Join My Cricket Club</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Vansh | Cricket Videos Page | Designed for Class 10 Project</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📬 Contact Me</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+      background: rgba(255, 255, 255, 0.8);
+      color: #000;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background: #00ffcc;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    form button:hover {
+      background: #ffcc00;
+      box-shadow: 0 0 10px #ffcc00;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="images/cricket-bg.mp4" type="video/mp4" />
+  </video>
+  <div class="overlay"></div>
+
+  <!-- Header and Navigation -->
+  <header>
+    <h1>📬 Contact Me</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="legends.html">Legends</a></li>
+        <li><a href="my-journey.html">My Journey</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="box">
+      <h2>📣 Let’s Connect!</h2>
+      <p>If you love cricket as much as I do, or want to share your own cricket story, feel free to reach out! You can also join my cricket club or send feedback about this website. Chalo milke cricket ka mazaa lete hain!</p>
+
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <textarea placeholder="Your Message or Cricket Story..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="box highlight">
+      <h2>🤝 Thank You!</h2>
+      <p>Thanks for visiting my website and exploring my cricket journey. I hope you enjoyed the content and felt inspired. Cricket is not just a game—it’s a celebration of teamwork, passion, and dreams. Milte hain pitch par!</p>
+      <button onclick="location.href='index.html'">Back to Home</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Vansh | Contact Page | Designed for Class 10 Project</p>
+  </footer>
+</body>
+</html>

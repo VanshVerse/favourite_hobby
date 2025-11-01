@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🖼️ Cricket Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffcc;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ffcc00;
+    }
+
+    .caption {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="images/cricket-bg.mp4" type="video/mp4" />
+  </video>
+  <div class="overlay"></div>
+
+  <!-- Header and Navigation -->
+  <header>
+    <h1>🖼️ Cricket Gallery</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="legends.html">Legends</a></li>
+        <li><a href="my-journey.html">My Journey</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="box">
+      <h2>📸 Moments from My Cricket Life</h2>
+      <p>Here are some snapshots that capture my love for cricket. From school matches to weekend games, each photo tells a story. Har photo ek yaad hai jo dil se judi hai!</p>
+
+      <div class="gallery">
+        <div>
+          <img src="https://source.unsplash.com/300x200/?cricket,bat" alt="Batting moment" />
+          <div class="caption">Batting Practice – My Favorite Shot!</div>
+        </div>
+        <div>
+          <img src="https://source.unsplash.com/301x200/?cricket,field" alt="Fielding moment" />
+          <div class="caption">Fielding Drill – Catch of the Day!</div>
+        </div>
+        <div>
+          <img src="https://source.unsplash.com/302x200/?cricket,team" alt="Team photo" />
+          <div class="caption">School Team – United We Play!</div>
+        </div>
+        <div>
+          <img src="https://source.unsplash.com/303x200/?cricket,match" alt="Match moment" />
+          <div class="caption">Weekend Match – Full Energy!</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="box highlight">
+      <h2>🎉 Why These Moments Matter</h2>
+      <p>Each photo reminds me of the joy, effort, and teamwork that cricket brings. Whether it's a win or a loss, the memories stay forever. Cricket ne mujhe dosti, dedication aur discipline sikhaya hai!</p>
+      <button onclick="location.href='quiz.html'">Take the Cricket Quiz</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Vansh | Cricket Gallery Page | Designed for Class 10 Project</p>
+  </footer>
+</body>
+</html>

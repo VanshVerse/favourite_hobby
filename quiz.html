@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>❓ Cricket Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .quiz-question {
+      margin-bottom: 25px;
+    }
+
+    .quiz-question p {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .quiz-question button {
+      margin: 5px;
+      padding: 10px 20px;
+      background: #00ffcc;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .quiz-question button:hover {
+      background: #ffcc00;
+      box-shadow: 0 0 10px #ffcc00;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="images/cricket-bg.mp4" type="video/mp4" />
+  </video>
+  <div class="overlay"></div>
+
+  <!-- Header and Navigation -->
+  <header>
+    <h1>❓ Cricket Quiz</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="legends.html">Legends</a></li>
+        <li><a href="my-journey.html">My Journey</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="box">
+      <h2>🧠 Test Your Cricket Knowledge!</h2>
+      <p>Are you a true cricket fan? Try these fun questions and see how much you know. Har sahi jawab ke liye ek clap! 👏</p>
+
+      <div class="quiz-question">
+        <p>1️⃣ How many players are there in a cricket team?</p>
+        <button>10</button>
+        <button>11</button>
+        <button>12</button>
+        <button>9</button>
+      </div>
+
+      <div class="quiz-question">
+        <p>2️⃣ Who is known as the “Little Master”?</p>
+        <button>MS Dhoni</button>
+        <button>Virat Kohli</button>
+        <button>Sachin Tendulkar</button>
+        <button>Rohit Sharma</button>
+      </div>
+
+      <div class="quiz-question">
+        <p>3️⃣ What does LBW stand for?</p>
+        <button>Leg Before Wicket</button>
+        <button>Long Batting Wicket</button>
+        <button>Last Ball Win</button>
+        <button>Left Bat Wide</button>
+      </div>
+
+      <div class="quiz-question">
+        <p>4️⃣ How many runs are awarded for a boundary?</p>
+        <button>2</button>
+        <button>4</button>
+        <button>6</button>
+        <button>1</button>
+      </div>
+
+      <div class="quiz-question">
+        <p>5️⃣ Which country won the first Cricket World Cup in 1975?</p>
+        <button>India</button>
+        <button>Australia</button>
+        <button>England</button>
+        <button>West Indies</button>
+      </div>
+    </section>
+
+    <section class="box highlight">
+      <h2>🎉 Well Played!</h2>
+      <p>This quiz is just for fun, but if you got all answers right—wah bhai wah, you’re a true cricket champ! Want to add real scoring and feedback? Let me know and I’ll help you code it!</p>
+      <button onclick="location.href='videos.html'">Watch Cricket Highlights</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Vansh | Cricket Quiz Page | Designed for Class 10 Project</p>
+  </footer>
+</body>
+</html>
