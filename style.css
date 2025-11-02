@@ -71,20 +71,20 @@ main {
   margin: 30px 0;
   padding: 30px;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 0 15px #00ffcc;
   animation: fadeIn 1.5s ease;
 }
 
 .highlight {
-  border: 2px dashed #ffcc00;
+  border: 2px  #00ffcc;
   background: rgba(255, 255, 255, 0.15);
 }
 
 button {
   margin-top: 15px;
   padding: 10px 20px;
-  background: #00ffcc;
+  background: #eede06;
   color: #000;
   border: none;
   border-radius: 8px;
@@ -94,7 +94,7 @@ button {
 }
 
 button:hover {
-  background: #ffcc00;
+  background: #00ffcc;
   color: #000;
   box-shadow: 0 0 10px #ffcc00;
 }
@@ -111,4 +111,110 @@ footer {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+
+h1 {
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+h2 {
+  color: #ffcc00;
+  text-shadow: 0 0 10px #ffcc00;
+}
+
+h3 {
+  color: #02bfd4;
+  text-shadow: 0 0 8px #000000;
+}
+
+h4 {
+  color: #66ffff;
+  text-shadow: 0 0 6px #66ffff;
+}
+
+.highlight-red {
+  color: #ff4444;
+  font-weight: bold;
+  background: rgba(255, 68, 68, 0.1);
+  padding: 2px 6px;
+  border-radius: 5px;
+  text-shadow: 0 0 5px #ff4444;
+}
+
+.highlight-yellow {
+  color: #ffcc00;
+  font-weight: bold;
+  background: rgba(255, 204, 0, 0.1);
+  padding: 2px 6px;
+  border-radius: 5px;
+  text-shadow: 0 0 5px #ffcc00;
+}
+
+.highlight-green {
+  color: #00ff99;
+  font-weight: bold;
+  background: rgba(0, 255, 153, 0.1);
+  padding: 2px 6px;
+  border-radius: 5px;
+  text-shadow: 0 0 5px #00ff99;
+}
+
+.highlight-blue {
+  color: #33ccff;
+  font-weight: bold;
+  background: rgba(51, 204, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 5px;
+  text-shadow: 0 0 5px #33ccff;
+}
+
+
+/* Quiz Page Styling */
+.quiz-question {
+  margin-bottom: 25px;
+}
+
+.quiz-question p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f47b02;
+  text-shadow: 0 0 8px #000000;
+}
+
+.quiz-question button {
+  margin: 5px;
+  padding: 10px 20px;
+  background: #00ffcc;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.quiz-question button:hover {
+  background: #00ffcc;
+  box-shadow: 0 0 10px #ffcc00;
+}
+
+/* Selected Answer Effect */
+.selected {
+  font-weight: bold;
+  box-shadow: 0 0 10px #fff;
+}
+
+/* Correct and Incorrect Feedback */
+.quiz-question button[data-correct="true"].selected {
+  background-color: #0dff00 !important;
+  color: #000;
+  text-shadow: 0 0 5px #00ff99;
+}
+
+.quiz-question button[data-correct="false"].selected {
+  background-color: #ff4444 !important;
+  color: #000;
+  text-shadow: 0 0 5px #ff4444;
 }
